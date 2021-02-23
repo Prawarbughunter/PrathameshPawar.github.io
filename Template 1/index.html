@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="../index.html" class="profile">Go to Profile</a></li>
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#about">Contact</a></li> -->
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-right"><a href="#signup">signup</a></li>
+            <li class="nav-right"><a href="#signin">signin</a></li>
+            <li class="menuicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+
+        </ul>
+    </nav>
+    <div class="container" id="home">
+        <div class="row">
+            <div class="col-6">
+            
+                <div class="left-section">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made For Developers</h1>
+                </div>
+                <form>
+                    <div class="left-section" id="signin">
+                        <h2 class="large-2">Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="Username" />
+                        <h2 class="large-2">Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="Password" /><br/><br/>
+                        <button class="button">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-6">
+                <div class="right-section">
+                    <iframe class="video" width="500" height="300" src="https://www.youtube.com/embed/CvORuRjBM5s"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container1" id="services">
+        <header>
+            <h2 class="header2">Our Services</h2>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo2.png">
+                    </div>
+                    <label>Chat with us</label>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
+                        for previewing layouts and visual mockups.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo2.png">
+                    </div>
+                    <label>Learn Code</label>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
+                        for previewing layouts and visual mockups.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo2.png">
+                    </div>
+                    <label>Build Empire</label>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
+                        for previewing layouts and visual mockups.</p>
+                </div>
+            </div>
+            <button type="button">Learn more</button>
+
+        </div>
+    </div>
+    <div class="container about" id="about">
+        <h2 class="header2">About us</h2>
+        <div class="row">
+            <div class="col-9">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minima laboriosam, quae aperiam,
+                    debitis libero placeat aliquam exercitationem atque adipisci nostrum blanditiis. Error neque ipsum
+                    incidunt, porro esse laudantium veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minima laboriosam, quae aperiam,
+                    debitis libero placeat aliquam exercitationem atque adipisci nostrum blanditiis. Error neque ipsum
+                    incidunt, porro esse laudantium veritatis.</p>
+            </article>
+        </div>
+            <div class="col-3">
+                <div class="slopicon">
+                    <img src="1.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Stay in Touch</h3>
+                    <ul>
+                        <li><a><i class="fab fa-facebook"></i></a></li>
+                        <li><a><i class="fab fa-instagram"></i></a></li>
+                        <li><a><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function dropdownmenu() {
+            var x = document.getElementById("dropdownclick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
